@@ -1,0 +1,46 @@
+{
+  "name": "react-top-menu",
+  "version": "0.0.1",
+  "description": "A lightweight React Top Menu",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/choonkending/react-top-menu.git"
+  },
+  "keywords": [
+    "React",
+    "Menu"
+  ],
+  "author": "Choon Ken Ding",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/choonkending/react-top-menu/issues"
+  },
+  "homepage": "https://github.com/choonkending/react-top-menu#readme",
+  "dependencies": {
+    "classnames": "^2.2.3",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "object.assign": "^4.0.3"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.5.2",
+    "babel-eslint": "^5.0.0",
+    "babel-loader": "^6.2.3",
+    "babel-plugin-react-transform": "^2.0.0",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-react-hmre": "^1.1.0",
+    "babel-preset-stage-2": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "file-loader": "^0.8.5",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  }
+}

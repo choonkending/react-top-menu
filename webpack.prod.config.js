@@ -16,7 +16,16 @@ module.exports = {
         test: /.js$/,
         loader: 'babel',
         exclude: path.join(__dirname, '/node_modules')
+      },
+      {
+        test: /.css$/,
+        loader: 'style-loader!css-loader!postcss-loader'
       }
+    ]
+  },
+  resolve: {
+    root: [
+      path.resolve('./src')
     ]
   },
   plugins: [
@@ -25,6 +34,16 @@ module.exports = {
         NODE_ENV: JSON.stringify('production')
       }
     })
-  ]
+  ],
+  postcss: function() {
+    return [
+      require('autoprefixer')({
+        browsers: ['last 2 versions', 'IE > 8']
+      }),
+      require('postcss-reporter')({
+        clearMessages: true
+      })
+    ];
+  }
 };
 

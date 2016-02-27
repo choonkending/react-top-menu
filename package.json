@@ -1,6 +1,6 @@
 {
   "name": "react-top-menu",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A lightweight React Top Menu",
   "main": "./dist/ReactTopMenu.js",
   "scripts": {

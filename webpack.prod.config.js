@@ -6,8 +6,9 @@ module.exports = {
     index: './src/index.js'
   },
   output: {
-    path: path.join(__dirname, 'dist'),
-    filename: '[name].js'
+    library: 'ReactTopMenu',
+    libraryTarget: 'umd',
+    filename: 'dist/ReactTopMenu.js'
   },
   module: {
     loaders: [
@@ -19,11 +20,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: false
-      }
-    }),
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: JSON.stringify('production')

@@ -2,7 +2,7 @@ import React, {PropTypes} from 'react';
 import classNames from 'classnames';
 import objectAssign from 'object-assign';
 
-export default TopMenu = props => {
+const TopMenu = props => {
   const {
     className,
     useDefaultClassName,
@@ -18,4 +18,6 @@ export default TopMenu = props => {
 
   return (<div {...elemProps}>{children}</div>);
 };
+
+module.exports = TopMenu;
 

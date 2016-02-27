@@ -2,7 +2,7 @@
   "name": "react-top-menu",
   "version": "0.0.6",
   "description": "A lightweight React Top Menu",
-  "main": "./dist/index.js",
+  "main": "./dist/ReactTopMenu.js",
   "scripts": {
     "build": "npm run clean && npm run build:webpack",
     "build:webpack": "NODE_ENV=production webpack --config webpack.prod.config.js --progress --colors",

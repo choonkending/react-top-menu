@@ -1,0 +1,53 @@
+$color-woodsmoke: #0C0D0F;
+
+.burger {
+  width: 2rem;
+  position: relative;
+}
+
+.burgerStripe {
+  width: 32px;
+  height: 6px;
+  position: absolute;
+  display: block;
+
+  background: $color-woodsmoke;
+  margin-bottom: 2px;
+  border-radius: 2px;
+
+  cursor: pointer;
+  content: '';
+  opacity: 1;
+
+  transition: transform 0.2s ease-in-out,
+              opacity 0.2s ease-in-out;
+
+}
+
+
+.one {
+  top: 0;
+}
+
+  .flipOne {
+    top: 10px;
+    transform: rotate(45deg);
+  }
+
+.two {
+ top: 10px;
+}
+
+  .flipTwo {
+    opacity: 0;
+  }
+
+.three {
+  top: 20px;
+}
+
+  .flipThree {
+    top: 10px;
+    transform: rotate(-45deg);
+  }
+

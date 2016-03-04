@@ -1,27 +1,13 @@
-import React, {PropTypes} from 'react';
-import classNames from 'classnames';
-import objectAssign from 'object-assign';
+export { default as SimpleMenu } from 'SimpleMenu';
 
-import 'css/top-menu.css';
-
-const ReactTopMenu = props => {
-  const {
-    className,
-    useDefaultClassName,
-    children,
-    isSticky,
-    ...elemProps
-  } = props;
-
-  objectAssign(elemProps, {
-    className: classNames({
-      'react-top-menu': useDefaultClassName,
-      'react-top-menu--sticky': isSticky
-    }, className)
+if (process.env.NODE_ENV !== 'production') {
+  Object.defineProperty(exports, 'default', {
+    get() {
+      console.error( // eslint-disable-line no-console
+        'React Top Menu does not provide a default export. ' +
+        'You are probably missing the curly braces in the import statement. '
+      );
+    }
   });
-
-  return (<div {...elemProps}>{children}</div>);
-};
-
-module.exports = ReactTopMenu;
+}
 

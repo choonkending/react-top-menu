@@ -1,9 +1,0 @@
-.react-top-menu {
-  width: 100%;
-  position: relative;
-}
-
-  .react-top-menu--sticky {
-    position: fixed;
-    top: 0;
-  }

@@ -19,7 +19,7 @@ module.exports = {
       },
       {
         test: /.css$/,
-        loader: 'style-loader!css-loader!postcss-loader'
+        loader: 'style-loader!css-loader?modules!postcss-loader'
       }
     ]
   },
@@ -37,6 +37,7 @@ module.exports = {
   ],
   postcss: function() {
     return [
+      require('postcss-simple-vars')(),
       require('autoprefixer')({
         browsers: ['last 2 versions', 'IE > 8']
       }),
